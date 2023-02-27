@@ -1,7 +1,10 @@
-# h10-task
-
+# h10 Task
 
 ## Kone 
+- Lenovo Y510P läppäri
+- Suoritin: Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz  
+- 8 GB RAM
+- Windows 10, versio: 22H2
 
 ## a)
 
