@@ -27,7 +27,7 @@ Otin virtuaaliympäristön käyttöön komennolla ``$ source env/bin/activate``
 
 Asennan Djangon virtuaaliympäristöön. Asennus tapahtuu ``pip`` komennon avulla, sillä komento mahdollistaa vahvistamattomien pakettien asentamisen. Varmistan, että paketit asennetaan virtuaaliympäristöön komennolla ``$ which pip`` komento antoi vastaukseksi ``/home/miikkas/env/bin/pip`` eli asennus menee oikeaan tiedostopolkuun, luomaani ``env/`` kansioon eli virtuaaliympäristöön.
 
-Loin Micro editorilla requirements.txt tekstitiedoston ``$ micro requirements.txt``. Kirjoitin tekstitiedostoon Python paketin nimen ``django``, tallensin ja poistuin. Tiedoston luominen varmistaa, että asennan oikean Python django paketin ``pip`` komennolla. Tämän avulla vältän mahdollisen kirjoitusvirheen asennuskomentoa antaessa. Pienikin kirjoitusvirhe paketin nimessä voisi johtaa mahdollisen haittallisen paketin asentamiseen.
+Loin Micro editorilla ``requirements.txt`` tekstitiedoston ``$ micro requirements.txt``. Kirjoitin tekstitiedostoon Python paketin nimen ``django``, tallensin ja poistuin. Tiedoston luominen varmistaa, että asennan oikean Python ``django`` paketin ``pip`` komennolla. Tämän avulla vältän mahdollisen kirjoitusvirheen asennuskomentoa antaessa. Pienikin kirjoitusvirhe paketin nimessä voisi johtaa mahdollisen haittallisen paketin asentamiseen.
 
 Tarkistin vielä, että kirjoitin paketin oikein ``$ cat requirements.txt``. 
 
@@ -75,18 +75,18 @@ Reboottasin sivun ja kirjauduin sisään juuri luomallani käyttäjällä.
 ![Add file: first login](first-login.PNG)
 
 Lisäsin toisen käyttäjän projektille ``Users ........ [+ Add]`` kohdasta. 
-- Syötin käyttjälle käyttäjänimen "miikkatesti" sekä generoin salasanan
 
 ![Add file: uusi kayttaja1](uusi-kayttaja1.PNG)
 
-- Syötin käyttäjän informaatioita kuten nimen jne... Syötin nimeksi "Test user for Miikka"
-- Annoin myös käyttäjälle aluksi kaikki mahdolliset oikeudet eli ``Staff status`` ja ``Superuser status``
+- Syötin käyttäjälle käyttäjänimen "miikkatesti" sekä generoin salasanan
 
 ![Add file: uusi kayttaja2](uusi-kayttaja2.PNG)
 
+- Syötin käyttäjän informaatioita kuten nimen jne... Syötin nimeksi "Test user for Miikka"
+- Annoin myös käyttäjälle aluksi kaikki mahdolliset oikeudet eli ``Staff status`` ja ``Superuser status``
 - Menin sivun alaosaan, josta painoin ``SAVE`` nappia.
 
-Nyt käyttäjissä on myös juuri luomani käyttäjä. Kirjauduin vielä sisään toisella käyttjällä tarkistaakseni, että käyttäjä toimii.
+Nyt käyttäjissä on myös juuri luomani uusi käyttäjä. Kirjauduin vielä sisään toisella käyttäjällä tarkistaakseni, että se toimii.
 
  ![Add file: second user](second-user.PNG)
  
@@ -133,7 +133,7 @@ Reboottasin projektin verkkosivun ja nyt uusi tietokanta on näkyvissä ja halli
 
 Lisäsin tietokantaan laitteille lisää sarakkeita tietoja varten.
 - ``id`` / ``PRIMARY_KEY``
-- ``state``, johon lisäsin vaihtoehdot ``ACTIVE, RENTED, AVAILABLE, MAINTANCE``
+- ``state``, johon lisäsin vaihtoehdot valittaviksi ``ACTIVE, RENTED, AVAILABLE, MAINTENANCE``
 
 ![Add file: lisää tietoja](lisaa-tietoja.PNG)
 
@@ -150,11 +150,12 @@ Muokkasin käyttäjäliittymää ``models.py`` tiedostoa, jotta saan haluamani t
 ![Add file: Interface](interface.PNG)
 
 Lopuksi muokkasin vielä toisen käyttäjän oikeuksia siten, että käyttäjä pystyy pelkästään hallinnoimaan ``machine`` tietuetta. 
+
 ![Add file: testikayttäjä oikeudet](testikayttaja-oikeudet.PNG)
 
 Testasin vielä hallinnoimista toisella käyttäjällä:
 
-Nyt toisella käyttjällä oli pelkästään ``Machines`` tietokanta näkyvissä projektin hallinnointisivulla ja laitteiden muokkaaminen onnistui.
+Nyt toisella käyttäjällä oli pelkästään ``Machines`` tietokanta näkyvissä projektin hallinnointisivulla ja laitteiden muokkaaminen onnistui.
 
 ![Add file: Testikäyttäjä](testikayttaja-oikeudet-testaus.PNG)
 
