@@ -95,9 +95,11 @@ Nyt käyttäjissä on myös juuri luomani uusi käyttäjä. Kirjauduin vielä si
  
  ### Tietokannan luominen
  
- Loin uuden tietokannan mma, Machine Management App projektia varten. Komennolla:
+ Aloitin komennolla: 
  
         $ ./manage.py startapp mma
+        
+ Tämä loi uuden mma/ kansion, Machine Management App projektiani varten.
  
  Lisäsin ``mma``:n ``settings.py`` tiedostoon kohtaan ``INSTALLED_APPS`` 
  
@@ -162,4 +164,7 @@ Nyt toisella käyttäjällä oli pelkästään ``Machines`` tietokanta näkyviss
 
 ![Add file: Testikäyttäjä](testikayttaja-oikeudet-testaus.PNG)
 
+## Lähteet
+
+Karvinen Tero 2022, Django 4 Instant Customer Database Tutorial, Luettavissa: https://terokarvinen.com/2022/django-instant-crm-tutorial/
 
