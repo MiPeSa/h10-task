@@ -48,7 +48,9 @@ Seuraavaksi loin uuden projektin Djangolla.
 
         $ django-admin startproject msdb
 
-Tämän jälkeen testasin, että projekti toimii tuotannossa verkkosivulla. 
+Tämän jälkeen testasin, että projekti toimii tuotannossa verkkosivulla.
+- Avasin uuden komentokehotteen serverin ylläpitämistä varten.
+- Otin virtuaaliympäristön käyttöön komennolla ``$ source env/bin/activate``
 - Siirryin projektiin ``$ cd msdb``
 - Käynnistin tuotantoa varten olevan serverin ``$ ./manage.py runserver``
 - Avasin projektin URL:n ``http://127.0.0.1:8000/``
